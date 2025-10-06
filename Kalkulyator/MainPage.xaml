@@ -1,0 +1,76 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Kalkulyator.MainPage"
+             BackgroundColor="#1E1E1E">
+     
+   
+    
+<StackLayout Padding="20" VerticalOptions="FillAndExpand">
+        <!-- Natija -->
+        <Frame CornerRadius="40"
+               BackgroundColor="#FFFFFF"
+               Padding="10"
+               VerticalOptions="Start">
+            <Label x:Name="ResultLabel"
+                   Text="0"
+                   FontSize="48"
+                   HorizontalTextAlignment="End"
+                   TextColor="Black" />
+        </Frame>
+
+        <!-- Button Grid -->
+        <Grid RowSpacing="15" ColumnSpacing="15">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Row 0: Maxsus funksiyalar -->
+            <Button Text="√" Grid.Row="0" Grid.Column="0"  FontSize="30" TextColor="Green" Background="#1E1E1E"/>
+            <Button Text="x²" Grid.Row="0" Grid.Column="1" FontSize="30" TextColor="Green" Background="#1E1E1E"/>
+            <Button Text="CE" Grid.Row="0" Grid.Column="2" FontSize="30" TextColor="Green" Background="#1E1E1E"/>
+            <Button Text="«" Grid.Row="0" Grid.Column="3"  FontSize="40" TextColor="Green" Background="#1E1E1E"/>
+
+            <!-- Row 1: Operatorlar va funksiyalar -->
+            <Button Text="C" Grid.Row="1" Grid.Column="0" FontSize="30" TextColor="Green" Background="#1E1E1E"/>
+            <Button Text="M" Grid.Row="1" Grid.Column="1" FontSize="30" TextColor="Green" Background="#1E1E1E"/>
+            <Button Text="%" Grid.Row="1" Grid.Column="2" FontSize="30" TextColor="Green" Background="#1E1E1E"/>
+            <Button Text="÷" Grid.Row="1" Grid.Column="3" FontSize="30" TextColor="Green" Background="#1E1E1E"/>
+
+            <!-- Row 2: 7 8 9 * -->
+            <Button Text="7" Grid.Row="2" Grid.Column="0"  FontSize="30" TextColor="White" Background="#1E1E1E"/>
+            <Button Text="8" Grid.Row="2" Grid.Column="1"  FontSize="30" TextColor="White" Background="#1E1E1E"/>
+            <Button Text="9" Grid.Row="2" Grid.Column="2"  FontSize="30" TextColor="White" Background="#1E1E1E"/>
+            <Button Text="✕" Grid.Row="2" Grid.Column="3" FontSize="30" TextColor="Green" Background="#1E1E1E"/>
+
+            <!-- Row 3: 4 5 6 - -->
+            <Button Text="4" Grid.Row="3" Grid.Column="0" FontSize="30" TextColor="White" Background="#1E1E1E"/>
+            <Button Text="5" Grid.Row="3" Grid.Column="1" FontSize="30" TextColor="White" Background="#1E1E1E"/>
+            <Button Text="6" Grid.Row="3" Grid.Column="2" FontSize="30" TextColor="White" Background="#1E1E1E"/>
+            <Button Text="-" Grid.Row="3" Grid.Column="3" FontSize="30" TextColor="Green" Background="#1E1E1E"/>
+
+            <!-- Row 4: 1 2 3 + -->
+            <Button Text="1" Grid.Row="4" Grid.Column="0"  FontSize="30" TextColor="White" Background="#1E1E1E"/>
+            <Button Text="2" Grid.Row="4" Grid.Column="1"  FontSize="30" TextColor="White" Background="#1E1E1E"/>
+            <Button Text="3" Grid.Row="4" Grid.Column="2"  FontSize="30" TextColor="White" Background="#1E1E1E"/>
+            <Button Text="+" Grid.Row="4" Grid.Column="3"  FontSize="30" TextColor="Green" Background="#1E1E1E"/>
+
+            <!-- Row 5: 0 . +/- = -->
+            <Button Text="0" Grid.Row="5" Grid.Column="0"  FontSize="30" TextColor="White" Background="#1E1E1E"/>
+            <Button Text="." Grid.Row="5" Grid.Column="1"  FontSize="30" TextColor="White" Background="#1E1E1E"/>
+            <Button Text="+/-" Grid.Row="5" Grid.Column="2"  FontSize="30" TextColor="White" Background="#1E1E1E"/>
+            <Button Text="=" Grid.Row="5" Grid.Column="3"  FontSize="30" TextColor="White" Background="#FF69B4"/>
+
+        </Grid>
+    </StackLayout>
+</ContentPage>
